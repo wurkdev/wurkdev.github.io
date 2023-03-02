@@ -10,6 +10,8 @@
     <meta property="og:title" content="WurkDev | Web Development Company">
     <meta property="og:description" content="WurkDev is a company that specializes in creating custom Web solutions and graphic designs for businesses.">
     <meta property="og:url" content="https://wurkdev.github.io">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -27,6 +29,7 @@
         ]
       }
       </script>
+      
     <title>WurkDev | Contact</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,7 +42,7 @@
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="index.html" class="flex items-center">
           <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> -->
-          <span class="self-center text-white text-2xl italic font-bold whitespace-nowrap dark:text-white">WurkDev</span>
+          <span class="self-center text-white font-[Open_Sans] text-2xl italic font-bold whitespace-nowrap dark:text-white">WurkDev</span>
       </a>
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -75,82 +78,7 @@
       </div>
   
       <div class="flex flex-wrap justify-center">
-        <!-- <div class="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-5/12 px-3 lg:px-6">
-          <form id="contact-form">
-            <div class="form-group mb-6">
-              <input name="name" type="text" class="form-control block
-              w-full
-              px-3
-              py-1.5
-              text-base
-              font-normal
-              text-gray-700
-              bg-white bg-clip-padding
-              border border-solid border-gray-300
-              rounded
-              transition
-              ease-in-out
-              m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-                placeholder="Name">
-            </div>
-            <div class="form-group mb-6">
-              <input name="email" type="email" class="form-control block
-              w-full
-              px-3
-              py-1.5
-              text-base
-              font-normal
-              text-gray-700
-              bg-white bg-clip-padding
-              border border-solid border-gray-300
-              rounded
-              transition
-              ease-in-out
-              m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
-                placeholder="Email address">
-            </div>
-            <div class="form-group mb-6">
-              <textarea name="message" class="
-              form-control
-              block
-              w-full
-              px-3
-              py-1.5
-              text-base
-              font-normal
-              text-gray-700
-              bg-white bg-clip-padding
-              border border-solid border-gray-300
-              rounded
-              transition
-              ease-in-out
-              m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-            " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
-            </div>
-            <input type="submit" class="
-            w-full
-            px-6
-            py-2.5
-            bg-[#67acaf]
-            text-gray-700
-            font-medium
-            text-xs
-            leading-tight
-            uppercase
-            rounded
-            shadow-md
-            cursor-pointer
-            hover:bg-[#366573] hover:text-black hover:shadow-lg
-            focus:bg-[#366573] focus:shadow-lg focus:outline-none focus:ring-0
-            active:bg-[#366573] active:shadow-lg
-            transition
-            duration-150
-            ease-in-out" value="Send"/>
-          </form>
-        </div> -->
+        
         <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
           <div class="flex flex-wrap">
             <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
@@ -180,7 +108,7 @@
                 </div>
                 <div class="grow ml-6">
                   <p class="font-bold mb-1">Email</p>
-                  <p class="text-gray-500">info@wurkdev.com</p>
+                  <p class="text-gray-500 hover:underline"><a  href="mailto:info@wurkdev.com">info@wurkdev.com</a> </p>
                 </div>
               </div>
             </div>
@@ -200,6 +128,60 @@
             </div>
             
           </div>
+        </div>
+        <div class="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-5/12 px-3 lg:px-6">
+          <form id="contact-form" method="post" action="https://formspree.io/f/mnqyvzqj">
+            <div class="form-group mb-6">
+              <input required name="name" type="text" class="form-control block
+              w-full
+              bg-gray-300 border border-gray-300 text-gray-900 text-sm 
+              rounded focus:ring-blue-500 focus:border-blue-500 block 
+              p-2.5 dark:bg-gray-700 dark:border-gray-600 
+              placeholder-gray-600 dark:text-white dark:focus:ring-blue-500 
+              dark:focus:border-blue-500" 
+                placeholder="Name">
+            </div>
+            <div class="form-group mb-6">
+              <input required name="email" type="email" class="form-control block
+              w-full
+              bg-gray-300 border border-gray-300 text-gray-900 text-sm 
+              rounded focus:ring-blue-500 focus:border-blue-500 block 
+              p-2.5 dark:bg-gray-700 dark:border-gray-600 
+              placeholder-gray-600 dark:text-white dark:focus:ring-blue-500 
+              dark:focus:border-blue-500"
+                placeholder="Email address">
+            </div>
+            <div class="form-group mb-6">
+              <textarea name="message" class="
+              form-control
+              block
+              w-full
+              bg-gray-300 border border-gray-300 text-gray-900 text-sm 
+              rounded focus:ring-blue-500 focus:border-blue-500 block 
+              p-2.5 dark:bg-gray-700 dark:border-gray-600 
+              placeholder-gray-600 dark:text-white dark:focus:ring-blue-500 
+              dark:focus:border-blue-500" rows="3" placeholder="Message"></textarea>
+            </div>
+            <input type="submit" id="submit" class="
+            w-full
+            px-6
+            py-2.5
+            bg-[#67acaf]
+            text-gray-700
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            rounded
+            shadow-md
+            cursor-pointer
+            hover:bg-[#366573] hover:text-black hover:shadow-lg
+            focus:bg-[#366573] focus:shadow-lg focus:outline-none focus:ring-0
+            active:bg-[#366573] active:shadow-lg
+            transition
+            duration-150
+            ease-in-out" value="Send"/>
+          </form>
         </div>
       </div>
     </section>
@@ -258,5 +240,6 @@
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+<script src="submit_form.js"></script>
 </body>
 </html>
